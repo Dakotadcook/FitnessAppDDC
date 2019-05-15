@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Movie App</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Health And Fitness", "Index", "Movies", null, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Fitness Options", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Sign In", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Create Account", "Contact", "Home")</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container body-content">
+
+
+        <p> </p>
+        <p>Welcome, this website is dedicated to helping everyone who is unsure about what steps to take to get </p>
+        <p>into better shape. There is a lot of misinformation out there and it can be very hard to go through it all.</p>
+        <p>All tips and workouts are clinically proven and have been researched on their ethicacy and safety. So, </p>
+        <p>you can feel safe about what you are doing. Whether you have never worked out in your life or all of </p>
+        <p>your life I’m sure there will be something you can learn on this site. Thanks, and have fun. </p>
+        <img src="Poject Stuff/Project Picture"  />
+
+
+
+        <hr />
+        <footer></footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    
+</body>
+</html>
